@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import defImg from '../img/default.jpg'
+import defImg from '../../img/default.jpg'
 function Profile({ name = 'unknown',
   tag = 'unknown',
   location,

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import defImg from '../img/default.jpg'
+import defImg from '../../img/default.jpg'
 function FriendListItem({ avatar = defImg, name = 'unknown', isOnline = true, }) {
    return (
      <li class={item}>
