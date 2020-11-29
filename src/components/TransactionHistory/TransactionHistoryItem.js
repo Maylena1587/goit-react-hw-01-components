@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types';
-function TransactionHistory({ type, amount, currency }) {
-return (
-    <>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
-    </>
+import s from './TransactionHistoryItem.module.css';
+function TransactionHistoryItem({ type, amount, currency }) {
+  return (
+    <tr className={s.row}>
+      <td className={s.cell}>{type}</td>
+      <td className={s.cell}>{amount}</td>
+      <td className={s.cell}>{currency}</td>
+    </tr>
   );
 }
 
-TransactionElement.propTypes = {
+TransactionHistoryItem.propTypes = {
   type: PropTypes.string.isRequired,
   amount: PropTypes.string.isRequired,
   currency: PropTypes.string.isRequired,

@@ -1,0 +1,16 @@
+.history {
+  width: 600px;
+  margin: 25px auto 15px auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px 0px #7c7c7c;
+}
+.history:hover,
+.history:focus {
+  transform: scale(1.05);
+}
+.thead {
+  height: 50px;
+  background-color: lightseagreen;
+  color: #fff;
+  text-transform: uppercase;
+}

@@ -1,0 +1,32 @@
+.statistics {
+  width: 350px;
+  margin: 25px auto 25px auto;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: rgb(99, 96, 96);
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.list {
+  display: flex;
+  width: 100%;
+  list-style: none;
+}
+
+.label {
+  padding: 3px;
+  font-size: 12px;
+}
+
+.percentage {
+  padding: 3px;
+  font-size: 16px;
+}

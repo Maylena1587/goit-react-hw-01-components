@@ -1,13 +1,18 @@
-import PropTypes from 'prop-types'
-import defImg from '../../img/default.jpg'
-function FriendListItem({ avatar = defImg, name = 'unknown', isOnline = true, }) {
-   return (
-     <li class={item}>
-       <span class={isOnline ? `${isOnline}` : `${isOfline}`}></span>
-       <img class={avatar} src="" alt={name} width="48" />
-       <p class={name}>{name}</p>
-     </li>
-   )   
+import PropTypes from 'prop-types';
+import defImg from '../../img/default.jpg';
+import s from './FriendListItem.module.css';
+function FriendListItem({
+  avatar = defImg,
+  name = 'unknown',
+  isOnline = true,
+}) {
+  return (
+    <li className={s.item}>
+      <span className={isOnline ? `${s.isOnline}` : `${s.isOffline}`}></span>
+      <img className={s.avatar} src={avatar} alt={name} width="48" />
+      <p className={s.name}>{name}</p>
+    </li>
+  );
 }
 
 FriendListItem.propTypes = {

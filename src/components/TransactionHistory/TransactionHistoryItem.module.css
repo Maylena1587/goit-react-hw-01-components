@@ -1,0 +1,14 @@
+.row {
+  background-color: rgb(231, 231, 231);
+}
+.row:nth-of-type(2n + 1) {
+  background-color: #fff;
+}
+
+.cell {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 7px 10px 7px 10px;
+  color: lightslategray;
+  outline: 0.1px solid rgb(243, 237, 237);
+}
