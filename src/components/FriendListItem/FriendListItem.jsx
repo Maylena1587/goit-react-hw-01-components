@@ -1,11 +1,7 @@
 import PropTypes from 'prop-types';
 import defImg from '../../img/default.jpg';
 import s from './FriendListItem.module.css';
-function FriendListItem({
-  avatar = defImg,
-  name = 'unknown',
-  isOnline = true,
-}) {
+function FriendListItem({ avatar, name, isOnline }) {
   return (
     <li className={s.item}>
       <span className={isOnline ? `${s.isOnline}` : `${s.isOffline}`}></span>
@@ -14,6 +10,11 @@ function FriendListItem({
     </li>
   );
 }
+FriendListItem.defaultProps = {
+  avatar: defImg,
+  name: 'unknown',
+  isOnline: true,
+};
 
 FriendListItem.propTypes = {
   avatar: PropTypes.string,

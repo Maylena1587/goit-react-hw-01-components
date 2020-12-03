@@ -1,13 +1,7 @@
 import PropTypes from 'prop-types';
 import defImg from '../../img/default.jpg';
 import s from './Profile.module.css';
-function Profile({
-  name = 'unknown',
-  tag = 'unknown',
-  location,
-  avatar = defImg,
-  stats,
-}) {
+function Profile({ name, tag, location, avatar, stats }) {
   return (
     <div className={s.profile}>
       <div className={s.description}>
@@ -34,6 +28,13 @@ function Profile({
     </div>
   );
 }
+
+Profile.defaultProps = {
+  avatar: defImg,
+  name: 'unknown',
+  tag: 'unknown',
+};
+
 Profile.propTypes = {
   name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
